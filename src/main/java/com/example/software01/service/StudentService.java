@@ -10,7 +10,7 @@ import java.util.List;
 @Service
 public class StudentService {
     private StudentTeacherRepository studentTeacherRepository;
-
+    //studentTeacherRepository：constructor依赖注入，一个构造器省略@Autowired
     public StudentService(StudentTeacherRepository studentTeacherRepository){
         this.studentTeacherRepository =studentTeacherRepository;
     }
